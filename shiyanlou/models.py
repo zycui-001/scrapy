@@ -20,7 +20,7 @@ class User(Base):
 	__tablename__ = 'users'
 
 	id = Column(Integer, primary_key=True)
-	name = Column(String(64), index=True)
+	name = Column(String(256), index=True)
 	type = Column(String(64))
 	status = Column(String(64), index=True)
 	school = Column(String(64))
